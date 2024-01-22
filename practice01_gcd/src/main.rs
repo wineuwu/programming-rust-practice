@@ -20,7 +20,10 @@ fn main() {
 
     let mut d = numbers[0];
 
+    println!("d = {}", d);
+
     for m in &numbers[1..] {
+        println!("m = {}", *m);
         d = gcd(d, *m);
     }
 
